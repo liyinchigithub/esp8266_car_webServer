@@ -47,9 +47,9 @@
 
 ## 遥控页面地址
 
-<img width="500" height="500" alt="image" src="https://github.com/liyinchigithub/esp8266_car_webServer/assets/19643260/62d7ff29-ab52-46f4-8778-2e42e55429bf">
+<img width="300" height="200" alt="image" src="https://github.com/liyinchigithub/esp8266_car_webServer/assets/19643260/62d7ff29-ab52-46f4-8778-2e42e55429bf">
 
-<img width="500" height="500" alt="image" src="https://github.com/liyinchigithub/esp8266_car_webServer/assets/19643260/c034a9bb-b5e1-4976-b85d-494fd0ee7cb6">
+<img width="300" height="200" alt="image" src="https://github.com/liyinchigithub/esp8266_car_webServer/assets/19643260/c034a9bb-b5e1-4976-b85d-494fd0ee7cb6">
 
 
 ## 常见问题
