@@ -38,6 +38,14 @@ const char* webpage PROGMEM = R"rawliteral(
     padding: 20px;
     margin: 10px;
   }
+  #forward {
+    background-color: blue;
+    color: white;
+  }
+  #stop {
+    background-color: red;
+    color: white;
+  }
 </style>
 <script>
 function sendCommand(action) {
