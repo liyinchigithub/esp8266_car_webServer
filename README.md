@@ -43,6 +43,13 @@
 
 <img src="https://github.com/liyinchigithub/esp8266_car_webServer/assets/19643260/63b7af22-43ba-44dd-9fcb-7d5651c6fffd" width="500" height="500">
 
+## 遥控页面地址
+
+<img width="500" height="500" alt="image" src="https://github.com/liyinchigithub/esp8266_car_webServer/assets/19643260/62d7ff29-ab52-46f4-8778-2e42e55429bf">
+
+<img width="500" height="500" alt="image" src="https://github.com/liyinchigithub/esp8266_car_webServer/assets/19643260/c034a9bb-b5e1-4976-b85d-494fd0ee7cb6">
+
+
 ## 常见问题
 
 如果你已经将D1和D2设置为高电平，但是马达没有运动，可能有以下几个原因：
