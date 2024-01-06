@@ -20,6 +20,25 @@ const char* webpage PROGMEM = R"rawliteral(
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>ESP8266 Remote Car Control</title>
+<style>
+  #control-panel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100vh;
+  }
+  #horizontal-controls {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  button {
+    font-size: 2em;
+    padding: 20px;
+    margin: 10px;
+  }
+</style>
 <script>
 function sendCommand(action) {
   fetch('/goTo',
@@ -48,10 +67,12 @@ document.addEventListener('DOMContentLoaded', function() {
 </script>
 </head>
 <body>
-<div style="display: flex; justify-content: center;">
-  <button id="left">左转</button>
-  <button id="right">右转</button>
+<div id="control-panel">
   <button id="forward">前进</button>
+  <div id="horizontal-controls">
+    <button id="left">左转</button>
+    <button id="right">右转</button>
+  </div>
   <button id="stop">停止</button>
 </div>
 </body>
