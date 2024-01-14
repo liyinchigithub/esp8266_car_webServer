@@ -41,7 +41,7 @@
 
 1. OUT1和OUT2 电池1、OUT3和OUT4 电池2
 
-<img src="https://github.com/liyinchigithub/esp8266_car_webServer/assets/19643260/cc0a4d85-65d7-4f76-acab-0b359a90d4be" width="200" height="200">
+<img src="https://github.com/liyinchigithub/esp8266_car_webServer/assets/19643260/cc0a4d85-65d7-4f76-acab-0b359a90d4be" width="300" height="200">
 
 
 2. 12V电源正极、GND电源负极+8266电源负极 、+5V8266引脚
