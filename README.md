@@ -1,14 +1,14 @@
 # 基于ESP8266 开发板（MCU）遥控小车
 
-<img src="https://github.com/liyinchigithub/esp8266_car_webServer/assets/19643260/ea086093-c5bf-4786-9c52-e326af90d327" width="500" height="500">
+<img src="https://github.com/liyinchigithub/esp8266_car_webServer/assets/19643260/ea086093-c5bf-4786-9c52-e326af90d327" width="300" height="300">
 
 * ESP8266 NodeMCU 单片机
 
-<img src="https://github.com/liyinchigithub/arduino_8266_wifi_http/assets/19643260/76239ce4-ee90-4eb4-8592-a552edf20d79" width="500" height="500">
+<img src="https://github.com/liyinchigithub/arduino_8266_wifi_http/assets/19643260/76239ce4-ee90-4eb4-8592-a552edf20d79" width="300" height="500">
 
 ## 引脚图
 
-<img src="https://github.com/liyinchigithub/arduino_8266_wifi_http/assets/19643260/bb6bba64-6fff-4bb0-8efd-cd1b91b4743d" width="500" height="300">
+<img src="https://github.com/liyinchigithub/arduino_8266_wifi_http/assets/19643260/bb6bba64-6fff-4bb0-8efd-cd1b91b4743d" width="400" height="300">
 
 ## 安装ESP8266Audio库
 
@@ -41,44 +41,44 @@
 
 1. OUT1和OUT2 电池1、OUT3和OUT4 电池2
 
-![image](https://github.com/liyinchigithub/esp8266_car_webServer/assets/19643260/cc0a4d85-65d7-4f76-acab-0b359a90d4be)
+<img src="https://github.com/liyinchigithub/esp8266_car_webServer/assets/19643260/cc0a4d85-65d7-4f76-acab-0b359a90d4be" width="200" height="200">
 
 
 2. 12V电源正极、GND电源负极+8266电源负极 、+5V8266引脚
 
-![image](https://github.com/liyinchigithub/esp8266_car_webServer/assets/19643260/c999d437-46b0-43eb-8c7f-5f245023c422)
+<img src="https://github.com/liyinchigithub/esp8266_car_webServer/assets/19643260/c999d437-46b0-43eb-8c7f-5f245023c422" width="300" height="200">
 
 
 3. ENA：电机1PWM调速引脚
 
-![image](https://github.com/liyinchigithub/esp8266_car_webServer/assets/19643260/4fabed0e-b6d7-4cd6-9a88-b94c54a44d8c)
+<img src="https://github.com/liyinchigithub/esp8266_car_webServer/assets/19643260/4fabed0e-b6d7-4cd6-9a88-b94c54a44d8c" width="300" height="200">
 
 **注意**：不使用调速引脚，那两个塑料不要拔起来，拔起来后需要用“母对母”跳线连接
 
 5. ENB：电机2PWM调速引脚
 
-![image](https://github.com/liyinchigithub/esp8266_car_webServer/assets/19643260/e572ce93-db48-47b2-bff0-e6e7f846b1cb)
+<img src="https://github.com/liyinchigithub/esp8266_car_webServer/assets/19643260/e572ce93-db48-47b2-bff0-e6e7f846b1cb" width="300" height="200">
 
 
 6. IN1和IN2：电机1 正反转/停止控制
    
-![image](https://github.com/liyinchigithub/esp8266_car_webServer/assets/19643260/73b05a29-3d88-49ee-ac6e-4be1033e2765)
+<img src="https://github.com/liyinchigithub/esp8266_car_webServer/assets/19643260/73b05a29-3d88-49ee-ac6e-4be1033e2765" width="300" height="200">
 
 7. IN3和IN4：电机2 正反转/停止控制
 
-![image](https://github.com/liyinchigithub/esp8266_car_webServer/assets/19643260/b9c65e78-46da-4abe-b596-874bfc079843)
+<img src="https://github.com/liyinchigithub/esp8266_car_webServer/assets/19643260/b9c65e78-46da-4abe-b596-874bfc079843" width="300" height="200">
 
 
 8.左右电机控制
 
-![image](https://github.com/liyinchigithub/esp8266_car_webServer/assets/19643260/f0de3c2f-4cdc-4fba-9f51-eb6617a97c96)
+<img src="https://github.com/liyinchigithub/esp8266_car_webServer/assets/19643260/f0de3c2f-4cdc-4fba-9f51-eb6617a97c96" width="300" height="200">
 
 
 9.引脚对接
 
-![image](https://github.com/liyinchigithub/esp8266_car_webServer/assets/19643260/d2b2ce52-44fb-4903-a1cd-41f9e2f1b2eb)
+<img src="https://github.com/liyinchigithub/esp8266_car_webServer/assets/19643260/d2b2ce52-44fb-4903-a1cd-41f9e2f1b2eb" width="200" height="200">
 
-![image](https://github.com/liyinchigithub/esp8266_car_webServer/assets/19643260/0c27b5c8-5c60-4ea2-aef6-1f0f54a0f2ec)
+<img src="https://github.com/liyinchigithub/esp8266_car_webServer/assets/19643260/0c27b5c8-5c60-4ea2-aef6-1f0f54a0f2ec" width="200" height="200">
 
 
 
