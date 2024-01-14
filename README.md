@@ -46,17 +46,21 @@
 
 2. 12V电源正极、GND电源负极+8266电源负极 、+5V8266引脚
 
-4. 
+![image](https://github.com/liyinchigithub/esp8266_car_webServer/assets/19643260/c999d437-46b0-43eb-8c7f-5f245023c422)
 
-5. ENA：电机1PWM调速引脚
 
-6. 
+3. ENA：电机1PWM调速引脚
 
-7. ENB：电机2PWM调速引脚
+![image](https://github.com/liyinchigithub/esp8266_car_webServer/assets/19643260/4fabed0e-b6d7-4cd6-9a88-b94c54a44d8c)
 
-8. 
+**注意**：不使用调速引脚，那两个塑料不要拔起来，拔起来后需要用“母对母”跳线连接
 
-9. IN1和IN2：电机1 正反转/停止控制
+5. ENB：电机2PWM调速引脚
+
+![image](https://github.com/liyinchigithub/esp8266_car_webServer/assets/19643260/e572ce93-db48-47b2-bff0-e6e7f846b1cb)
+
+
+6. IN1和IN2：电机1 正反转/停止控制
    
 ![image](https://github.com/liyinchigithub/esp8266_car_webServer/assets/19643260/73b05a29-3d88-49ee-ac6e-4be1033e2765)
 
@@ -65,12 +69,12 @@
 ![image](https://github.com/liyinchigithub/esp8266_car_webServer/assets/19643260/b9c65e78-46da-4abe-b596-874bfc079843)
 
 
-7.左右电机控制
+8.左右电机控制
 
 ![image](https://github.com/liyinchigithub/esp8266_car_webServer/assets/19643260/f0de3c2f-4cdc-4fba-9f51-eb6617a97c96)
 
 
-8.引脚对接
+9.引脚对接
 
 ![image](https://github.com/liyinchigithub/esp8266_car_webServer/assets/19643260/d2b2ce52-44fb-4903-a1cd-41f9e2f1b2eb)
 
