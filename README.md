@@ -2,15 +2,20 @@
 
 <img src="https://github.com/liyinchigithub/esp8266_car_webServer/assets/19643260/ea086093-c5bf-4786-9c52-e326af90d327" width="300" height="300">
 
-* ESP8266 NodeMCU 单片机
+
+## 材料
+
+ESP8266主板1个、步进器1个（电机驱动）、3.7V电池1个、车身架1个、2个轮胎和2个小马达、跳线若干。
+
+### 一、ESP8266 NodeMCU 单片机
 
 <img src="https://github.com/liyinchigithub/arduino_8266_wifi_http/assets/19643260/76239ce4-ee90-4eb4-8592-a552edf20d79" width="300" height="400">
 
-## 引脚图
+#### 引脚图
 
 <img src="https://github.com/liyinchigithub/arduino_8266_wifi_http/assets/19643260/bb6bba64-6fff-4bb0-8efd-cd1b91b4743d" width="400" height="300">
 
-## 安装ESP8266Audio库
+#### Arduino IDE 安装ESP8266Audio库
 
 1. 打开Arduino IDE。
 
@@ -21,7 +26,7 @@
 7. 在搜索结果中找到ESP8266Audio by Earle FPhlhower，点击Install按钮进行安装。
 
 
-## 选择开发板
+#### 选择开发板
 
 1. 打开Arduino IDE。
 
@@ -30,12 +35,12 @@
 
 <img src="https://github.com/liyinchigithub/arduino_8266_wifi_http/assets/19643260/28203800-5c51-43a8-8af3-ba9499a6872a" width="500" height="300">
 
-## 选择端口
+#### 选择端口
 
 
 <img src="https://github.com/liyinchigithub/arduino_8266_wifi_http/assets/19643260/a6f60b7d-fe45-4a72-bc83-d17902110132" width="200" height="150">
 
-## 可变速-L287N直流电机（步进器电机驱动板）
+### 二、（可变速）L287N直流电机（步进器电机驱动板）
 
 <img src="https://github.com/liyinchigithub/esp8266_car_webServer/assets/19643260/4be41a85-daaa-47ba-a8ee-69594b922bd1" width="200" height="550">
 
@@ -89,7 +94,7 @@
 
 
 
-## 不可变速-L9110S直流电机（步进器电机驱动板）
+### 三、（不可变速）L9110S直流电机（步进器电机驱动板）
 
 <img src="https://github.com/liyinchigithub/esp8266_car_webServer/assets/19643260/4b6524c5-65e4-40f3-8112-f5a8f1a63fd4" width="500" height="500">
 
@@ -99,7 +104,7 @@
 
 <img src="https://github.com/liyinchigithub/esp8266_car_webServer/assets/19643260/63b7af22-43ba-44dd-9fcb-7d5651c6fffd" width="500" height="500">
 
-## 遥控页面
+## 遥控按钮页面
 
 1.程序烧入ESP8266主板后，生成wifi热点：“遥控小车”；
 2.使用手机或平板连接热点密码：12345678
