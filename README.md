@@ -39,6 +39,47 @@
 
 <img src="https://github.com/liyinchigithub/esp8266_car_webServer/assets/19643260/4be41a85-daaa-47ba-a8ee-69594b922bd1" width="200" height="550">
 
+1. OUT1和OUT2 电池1、OUT3和OUT4 电池2
+
+![image](https://github.com/liyinchigithub/esp8266_car_webServer/assets/19643260/cc0a4d85-65d7-4f76-acab-0b359a90d4be)
+
+
+2. 12V电源正极、GND电源负极+8266电源负极 、+5V8266引脚
+
+4. 
+
+5. ENA：电机1PWM调速引脚
+
+6. 
+
+7. ENB：电机2PWM调速引脚
+
+8. 
+
+9. IN1和IN2：电机1 正反转/停止控制
+   
+![image](https://github.com/liyinchigithub/esp8266_car_webServer/assets/19643260/73b05a29-3d88-49ee-ac6e-4be1033e2765)
+
+7. IN3和IN4：电机2 正反转/停止控制
+
+![image](https://github.com/liyinchigithub/esp8266_car_webServer/assets/19643260/b9c65e78-46da-4abe-b596-874bfc079843)
+
+
+7.左右电机控制
+
+![image](https://github.com/liyinchigithub/esp8266_car_webServer/assets/19643260/f0de3c2f-4cdc-4fba-9f51-eb6617a97c96)
+
+
+8.引脚对接
+
+![image](https://github.com/liyinchigithub/esp8266_car_webServer/assets/19643260/d2b2ce52-44fb-4903-a1cd-41f9e2f1b2eb)
+
+![image](https://github.com/liyinchigithub/esp8266_car_webServer/assets/19643260/0c27b5c8-5c60-4ea2-aef6-1f0f54a0f2ec)
+
+
+
+[B站视频1](https://www.bilibili.com/video/BV1TW4y1y7PT/?spm_id_from=333.337.search-card.all.click&vd_source=73d9ae1d519db8c687b2d2e7b02c99ed)
+[B站视频2](https://www.bilibili.com/video/BV1Xt411372X/?spm_id_from=autoNext&vd_source=73d9ae1d519db8c687b2d2e7b02c99ed)
 
 
 
