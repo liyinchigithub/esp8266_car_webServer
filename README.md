@@ -49,7 +49,7 @@
 
 <img width="300" height="200" alt="image" src="https://github.com/liyinchigithub/esp8266_car_webServer/assets/19643260/62d7ff29-ab52-46f4-8778-2e42e55429bf">
 
-<img width="300" height="600" alt="image" src="https://github.com/liyinchigithub/esp8266_car_webServer/assets/19643260/95424f8f-9dde-46e0-9059-037b893b87e5">
+<img width="300" height="600" alt="image" src="https://github.com/liyinchigithub/esp8266_car_webServer/assets/19643260/1be608d1-c49a-480f-9ca6-871df87c923b">
 
 
 ## 常见问题
