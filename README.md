@@ -4,7 +4,7 @@
 
 * ESP8266 NodeMCU 单片机
 
-<img src="https://github.com/liyinchigithub/arduino_8266_wifi_http/assets/19643260/76239ce4-ee90-4eb4-8592-a552edf20d79" width="300" height="500">
+<img src="https://github.com/liyinchigithub/arduino_8266_wifi_http/assets/19643260/76239ce4-ee90-4eb4-8592-a552edf20d79" width="300" height="400">
 
 ## 引脚图
 
