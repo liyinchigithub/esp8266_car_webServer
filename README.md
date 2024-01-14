@@ -2,13 +2,13 @@
 
 <img src="https://github.com/liyinchigithub/esp8266_car_webServer/assets/19643260/ea086093-c5bf-4786-9c52-e326af90d327" width="500" height="500">
 
-* 8266 wifi 主板
+* ESP8266 NodeMCU 单片机
 
 <img src="https://github.com/liyinchigithub/arduino_8266_wifi_http/assets/19643260/76239ce4-ee90-4eb4-8592-a552edf20d79" width="500" height="500">
 
 ## 引脚图
 
-<img src="https://github.com/liyinchigithub/arduino_8266_wifi_http/assets/19643260/bb6bba64-6fff-4bb0-8efd-cd1b91b4743d" width="500" height="500">
+<img src="https://github.com/liyinchigithub/arduino_8266_wifi_http/assets/19643260/bb6bba64-6fff-4bb0-8efd-cd1b91b4743d" width="500" height="300">
 
 ## 安装ESP8266Audio库
 
@@ -28,12 +28,12 @@
 2. 在菜单栏中，选择工具 -> 开发板 -> 选择NodeMcu1.0
 
 
-<img src="https://github.com/liyinchigithub/arduino_8266_wifi_http/assets/19643260/28203800-5c51-43a8-8af3-ba9499a6872a" width="500" height="500">
+<img src="https://github.com/liyinchigithub/arduino_8266_wifi_http/assets/19643260/28203800-5c51-43a8-8af3-ba9499a6872a" width="500" height="300">
 
 ## 选择端口
 
 
-<img src="https://github.com/liyinchigithub/arduino_8266_wifi_http/assets/19643260/a6f60b7d-fe45-4a72-bc83-d17902110132" width="500" height="500">
+<img src="https://github.com/liyinchigithub/arduino_8266_wifi_http/assets/19643260/a6f60b7d-fe45-4a72-bc83-d17902110132" width="300" height="200">
 
 ## 可变速-L287N直流电机（步进器电机驱动板）
 
