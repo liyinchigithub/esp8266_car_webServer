@@ -35,7 +35,9 @@
 
 <img src="https://github.com/liyinchigithub/arduino_8266_wifi_http/assets/19643260/a6f60b7d-fe45-4a72-bc83-d17902110132" width="500" height="500">
 
-## L9110S直流电机（步进电机驱动板）
+## 可变速-L287N直流电机（步进器电机驱动板）
+
+## 不可变速-L9110S直流电机（步进器电机驱动板）
 
 <img src="https://github.com/liyinchigithub/esp8266_car_webServer/assets/19643260/4b6524c5-65e4-40f3-8112-f5a8f1a63fd4" width="500" height="500">
 
