@@ -33,9 +33,16 @@
 ## 选择端口
 
 
-<img src="https://github.com/liyinchigithub/arduino_8266_wifi_http/assets/19643260/a6f60b7d-fe45-4a72-bc83-d17902110132" width="300" height="200">
+<img src="https://github.com/liyinchigithub/arduino_8266_wifi_http/assets/19643260/a6f60b7d-fe45-4a72-bc83-d17902110132" width="200" height="150">
 
 ## 可变速-L287N直流电机（步进器电机驱动板）
+
+<img src="https://github.com/liyinchigithub/esp8266_car_webServer/assets/19643260/4be41a85-daaa-47ba-a8ee-69594b922bd1" width="200" height="550">
+
+
+
+
+
 
 ## 不可变速-L9110S直流电机（步进器电机驱动板）
 
@@ -47,11 +54,13 @@
 
 <img src="https://github.com/liyinchigithub/esp8266_car_webServer/assets/19643260/63b7af22-43ba-44dd-9fcb-7d5651c6fffd" width="500" height="500">
 
-## 遥控页面地址
+## 遥控页面
 
-<img width="300" height="200" alt="image" src="https://github.com/liyinchigithub/esp8266_car_webServer/assets/19643260/62d7ff29-ab52-46f4-8778-2e42e55429bf">
+1.程序烧入ESP8266主板后，生成wifi热点：“遥控小车”；
+2.使用手机或平板连接热点密码：12345678
+3.浏览器地址：http://192.168.4.1
 
-<img width="300" height="600" alt="image" src="https://github.com/liyinchigithub/esp8266_car_webServer/assets/19643260/1be608d1-c49a-480f-9ca6-871df87c923b">
+<img width="300" height="600" alt="image" src="https://github.com/liyinchigithub/esp8266_car_webServer/assets/19643260/7ca61931-389f-4d21-8b0d-e1590c4028b9">
 
 
 ## 常见问题
