@@ -40,6 +40,12 @@ ESP8266主板1个、步进器1个（电机驱动）、3.7V电池1个、车身架
 
 <img src="https://github.com/liyinchigithub/arduino_8266_wifi_http/assets/19643260/a6f60b7d-fe45-4a72-bc83-d17902110132" width="200" height="150">
 
+#### 驱动安装
+
+<img width="200" height="150" alt="image" src="https://github.com/liyinchigithub/esp8266_car_webServer/assets/19643260/5cea94e9-15a0-42e4-925c-4f86d307aaf4">
+
+
+
 ### 二、（可变速）L287N直流电机（步进器电机驱动板）
 
 <img src="https://github.com/liyinchigithub/esp8266_car_webServer/assets/19643260/4be41a85-daaa-47ba-a8ee-69594b922bd1" width="200" height="550">
