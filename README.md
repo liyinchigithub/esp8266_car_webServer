@@ -7,6 +7,11 @@
 
 ESP8266主板1个、步进器1个（电机驱动）、3.7V电池1个、车身架1个、2个轮胎和2个小马达、跳线若干。
 
+### 小车主板
+
+<img width="449" alt="image" src="https://github.com/liyinchigithub/esp8266_car_webServer/assets/19643260/2fcd5151-e3a0-4d4b-9fbe-824e7a37c865">
+
+
 ### 一、ESP8266 NodeMCU 单片机
 
 <img src="https://github.com/liyinchigithub/arduino_8266_wifi_http/assets/19643260/76239ce4-ee90-4eb4-8592-a552edf20d79" width="300" height="400">
