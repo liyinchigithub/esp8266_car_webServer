@@ -77,12 +77,18 @@ ESP8266主板1个、步进器1个（电机驱动）、3.7V电池1个、车身架
 
 7. IN3和IN4：电机2 正反转/停止控制
 
-<img src="https://github.com/liyinchigithub/esp8266_car_webServer/assets/19643260/b9c65e78-46da-4abe-b596-874bfc079843" width="300" height="200">
+* <img src="https://github.com/liyinchigithub/esp8266_car_webServer/assets/19643260/b9c65e78-46da-4abe-b596-874bfc079843" width="300" height="200">
+
+
+* <img width="800"  height="400" alt="image" src="https://github.com/liyinchigithub/esp8266_car_webServer/assets/19643260/72d39314-f720-45dd-b862-290088d42a8e">
+
+* <img width="739" alt="image" src="https://github.com/liyinchigithub/esp8266_car_webServer/assets/19643260/96386172-4779-4443-9e55-ea090757837c">
 
 
 8.左右电机控制
 
 <img src="https://github.com/liyinchigithub/esp8266_car_webServer/assets/19643260/f0de3c2f-4cdc-4fba-9f51-eb6617a97c96" width="300" height="200">
+
 
 
 9.引脚对接
