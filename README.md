@@ -98,6 +98,25 @@ ESP8266主板1个、步进器1个（电机驱动）、3.7V电池1个、车身架
 
 9.引脚对接
 
+
+<img src="https://github.com/liyinchigithub/esp8266_car_webServer/assets/19643260/c9a824f1-9111-45b1-a515-f6a1e5d4a5d4" width="400" height="600">
+
+  
+| L298N | ESP8266 |
+|----------|----------|
+| EN A   | D5  |
+| EN B  | D6   |
+| IN1    | D2   |
+| IN2    | D1   |
+| IN3    | D4   |
+| IN4    | D5   |
+| +12V    | 电池正极    |
+| GND    | 电池负极  |
+| 5V    | 3V3   |
+
+
+
+
 <img src="https://github.com/liyinchigithub/esp8266_car_webServer/assets/19643260/d2b2ce52-44fb-4903-a1cd-41f9e2f1b2eb" width="300" height="200">
 
 <img src="https://github.com/liyinchigithub/esp8266_car_webServer/assets/19643260/0c27b5c8-5c60-4ea2-aef6-1f0f54a0f2ec" width="300" height="200">
