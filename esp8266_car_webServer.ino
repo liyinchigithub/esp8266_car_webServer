@@ -9,12 +9,12 @@ const char *ssid = "遥控小车";      // 你想要的热点名称
 const char *password = "12345678";  // 热点的密码，至少8个字符
 
 // 定义L298N电机驱动板的引脚
-const int motorLeftIn1 = D1;   // 左电机输入1
-const int motorLeftIn2 = D2;   // 左电机输入2
-const int motorRightIn1 = D3;  // 右电机输入1
-const int motorRightIn2 = D4;  // 右电机输入2
-const int motorLeftEn = D5;    // 左电机使能
-const int motorRightEn = D6;   // 右电机使能
+const int motorLeftIn1 = D1;   // 左电机输入1  IN1
+const int motorLeftIn2 = D2;   // 左电机输入2  IN2
+const int motorRightIn1 = D3;  // 右电机输入1 IN4
+const int motorRightIn2 = D4;  // 右电机输入2 IN3
+const int motorLeftEn = D5;    // 左电机使能 ENA
+const int motorRightEn = D6;   // 右电机使能 ENB
 
 // 前端HTML页面内容定义为字符串
 const char *webpage PROGMEM = R"rawliteral(
@@ -252,16 +252,16 @@ void setMotorState(int action, bool continuous) {
       digitalWrite(motorRightIn2, LOW);  // 另一个电机向前
       break;
     case 3:  // 前进
-      digitalWrite(motorLeftIn1, HIGH);
-      digitalWrite(motorLeftIn2, LOW);  // 两个电机都向前
-      digitalWrite(motorRightIn1, HIGH);
-      digitalWrite(motorRightIn2, LOW);
-      break;
-    case 5:  // 后退
       digitalWrite(motorLeftIn1, LOW);
       digitalWrite(motorLeftIn2, HIGH);  // 两个电机都向后
       digitalWrite(motorRightIn1, LOW);
       digitalWrite(motorRightIn2, HIGH);
+      break;
+    case 5:  // 后退
+      digitalWrite(motorLeftIn1, HIGH);
+      digitalWrite(motorLeftIn2, LOW);  // 两个电机都向前
+      digitalWrite(motorRightIn1, HIGH);
+      digitalWrite(motorRightIn2, LOW);
       break;
     default:
       // 如果收到的action不是预期的，停止所有电机
