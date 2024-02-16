@@ -5,16 +5,16 @@
 // const char* ssid = "302"; // WiFi账号
 // const char* password = "123456781"; // WiFi密码
 
-const char *ssid = "遥控小车";      // 你想要的热点名称
-const char *password = "12345678";  // 热点的密码，至少8个字符
+const char *ssid = "遥控小车";     // 你想要的热点名称
+const char *password = "12345678"; // 热点的密码，至少8个字符
 
 // 定义L298N电机驱动板的引脚
-const int motorLeftIn1 = D1;   // 左电机输入1  IN1
-const int motorLeftIn2 = D2;   // 左电机输入2  IN2
-const int motorRightIn1 = D3;  // 右电机输入1 IN4
-const int motorRightIn2 = D4;  // 右电机输入2 IN3
-const int motorLeftEn = D5;    // 左电机使能 ENA
-const int motorRightEn = D6;   // 右电机使能 ENB
+const int motorLeftIn1 = D1;  // 左电机输入1  IN1
+const int motorLeftIn2 = D2;  // 左电机输入2  IN2
+const int motorRightIn1 = D3; // 右电机输入1 IN4
+const int motorRightIn2 = D4; // 右电机输入2 IN3
+const int motorLeftEn = D5;   // 左电机使能 ENA
+const int motorRightEn = D6;  // 右电机使能 ENB
 
 // 前端HTML页面内容定义为字符串
 const char *webpage PROGMEM = R"rawliteral(
@@ -129,7 +129,8 @@ void handleGet();
 void handlePost();
 
 // 停止所有电机
-void stopMotors() {
+void stopMotors()
+{
   digitalWrite(motorLeftIn1, LOW);
   digitalWrite(motorLeftIn2, LOW);
   digitalWrite(motorRightIn1, LOW);
@@ -137,28 +138,31 @@ void stopMotors() {
 }
 
 // 处理开始运动的请求
-void handleStart() {
-  if (server.method() == HTTP_POST) {
+void handleStart()
+{
+  if (server.method() == HTTP_POST)
+  {
     StaticJsonDocument<200> doc;
     deserializeJson(doc, server.arg("plain"));
     int action = doc["action"].as<int>();
-    setMotorState(action, true);  // 开始运动
+    setMotorState(action, true); // 开始运动
     server.send(200, "text/plain", "Start action received.");
   }
 }
 
 // 处理停止运动的请求
-void handleStop() {
-  if (server.method() == HTTP_POST) {
-    stopMotors();  // 停止所有电机
+void handleStop()
+{
+  if (server.method() == HTTP_POST)
+  {
+    stopMotors(); // 停止所有电机
     server.send(200, "text/plain", "Stop action received.");
   }
 }
 
-
-
 // 初始化
-void setup() {
+void setup()
+{
   Serial.begin(115200);
   // 连接WiFi
   // WiFi.begin(ssid, password);
@@ -176,12 +180,15 @@ void setup() {
   bool result = WiFi.softAP(ssid, password, channel, ssid_hidden, max_connection);
   Serial.println("ESP8266 is set as a WiFi Access Point with SSID: " + String(ssid));
 
-  if(result) {
+  if (result)
+  {
     Serial.println("Access Point Started");
     IPAddress IP = WiFi.softAPIP();
     Serial.print("AP IP address: ");
     Serial.println(IP);
-  } else {
+  }
+  else
+  {
     Serial.println("Access Point Failed to Start");
   }
 
@@ -199,74 +206,82 @@ void setup() {
 
   // 初始化Web服务器并设置主页响应
   server.on("/", handleGet);
-  server.on("/command", handlePost);  // 短按命令
-  server.on("/start", handleStart);   // 开始运动的请求
-  server.on("/stop", handleStop);     // 停止运动的请求
+  server.on("/command", handlePost); // 短按命令
+  server.on("/start", handleStart);  // 开始运动的请求
+  server.on("/stop", handleStop);    // 停止运动的请求
   server.begin();
   Serial.println("Web server started");
 }
 
-void loop() {
+void loop()
+{
   server.handleClient();
 }
 
 // 处理GET请求以返回HTML页面
-void handleGet() {
-  if (server.method() == HTTP_GET) {
+void handleGet()
+{
+  if (server.method() == HTTP_GET)
+  {
     server.send(200, "text/html", webpage);
   }
 }
 
 // 处理POST请求以控制电机
-void handlePost() {
-  if (server.method() == HTTP_POST) {
+void handlePost()
+{
+  if (server.method() == HTTP_POST)
+  {
     StaticJsonDocument<200> doc;
     deserializeJson(doc, server.arg("plain"));
     int action = doc["action"].as<int>();
-    bool longPress = doc["longPress"].as<bool>();  // 长按标志
+    bool longPress = doc["longPress"].as<bool>(); // 长按标志
 
     setMotorState(action, longPress);
 
-    if (!longPress) {
-      delay(1000);   // 短按持续1秒
-      stopMotors();  // 停止电机
+    if (!longPress)
+    {
+      delay(1000);  // 短按持续1秒
+      stopMotors(); // 停止电机
     }
 
     server.send(200, "text/plain", "Action received.");
   }
 }
 
-void setMotorState(int action, bool continuous) {
+void setMotorState(int action, bool continuous)
+{
   // 根据action设置电机状态
-  switch (action) {
-    case 1:  // 左转
-      digitalWrite(motorLeftIn1, HIGH);
-      digitalWrite(motorLeftIn2, LOW);  // 一个电机向前
-      digitalWrite(motorRightIn1, LOW);
-      digitalWrite(motorRightIn2, HIGH);  // 另一个电机向后
-      break;
-    case 2:  // 右转
-      digitalWrite(motorLeftIn1, LOW);
-      digitalWrite(motorLeftIn2, HIGH);  // 一个电机向后
-      digitalWrite(motorRightIn1, HIGH);
-      digitalWrite(motorRightIn2, LOW);  // 另一个电机向前
-      break;
-    case 3:  // 前进
-      digitalWrite(motorLeftIn1, LOW);
-      digitalWrite(motorLeftIn2, HIGH);  // 两个电机都向后
-      digitalWrite(motorRightIn1, LOW);
-      digitalWrite(motorRightIn2, HIGH);
-      break;
-    case 5:  // 后退
-      digitalWrite(motorLeftIn1, HIGH);
-      digitalWrite(motorLeftIn2, LOW);  // 两个电机都向前
-      digitalWrite(motorRightIn1, HIGH);
-      digitalWrite(motorRightIn2, LOW);
-      break;
-    default:
-      // 如果收到的action不是预期的，停止所有电机
-      stopMotors();
-      break;
+  switch (action)
+  {
+  case 1: // 左转
+    digitalWrite(motorLeftIn1, LOW);
+    digitalWrite(motorLeftIn2, HIGH); // 一个电机向后
+    digitalWrite(motorRightIn1, HIGH);
+    digitalWrite(motorRightIn2, LOW); // 另一个电机向前
+    break;
+  case 2: // 右转
+    digitalWrite(motorLeftIn1, HIGH);
+    digitalWrite(motorLeftIn2, LOW); // 一个电机向前
+    digitalWrite(motorRightIn1, LOW);
+    digitalWrite(motorRightIn2, HIGH); // 另一个电机向后
+    break;
+  case 3: // 前进
+    digitalWrite(motorLeftIn1, LOW);
+    digitalWrite(motorLeftIn2, HIGH); // 两个电机都向后
+    digitalWrite(motorRightIn1, LOW);
+    digitalWrite(motorRightIn2, HIGH);
+    break;
+  case 5: // 后退
+    digitalWrite(motorLeftIn1, HIGH);
+    digitalWrite(motorLeftIn2, LOW); // 两个电机都向前
+    digitalWrite(motorRightIn1, HIGH);
+    digitalWrite(motorRightIn2, LOW);
+    break;
+  default:
+    // 如果收到的action不是预期的，停止所有电机
+    stopMotors();
+    break;
   }
   // 如果不是长按，不需要在这里停止电机，因为会有单独的停止请求
 }
