@@ -98,9 +98,9 @@ ESP8266主板1个、步进器1个（电机驱动）、3.7V电池1个、车身架
 
 9.引脚对接
 
-<img src="https://github.com/liyinchigithub/esp8266_car_webServer/assets/19643260/d2b2ce52-44fb-4903-a1cd-41f9e2f1b2eb" width="200" height="200">
+<img src="https://github.com/liyinchigithub/esp8266_car_webServer/assets/19643260/d2b2ce52-44fb-4903-a1cd-41f9e2f1b2eb" width="300" height="200">
 
-<img src="https://github.com/liyinchigithub/esp8266_car_webServer/assets/19643260/0c27b5c8-5c60-4ea2-aef6-1f0f54a0f2ec" width="200" height="200">
+<img src="https://github.com/liyinchigithub/esp8266_car_webServer/assets/19643260/0c27b5c8-5c60-4ea2-aef6-1f0f54a0f2ec" width="300" height="200">
 
 
 
