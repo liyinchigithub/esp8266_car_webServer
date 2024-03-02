@@ -254,30 +254,30 @@ void setMotorState(int action, bool continuous)
   // 根据action设置电机状态
   switch (action)
   {
-  case 1: // 左转
-    digitalWrite(motorLeftIn1, LOW);
-    digitalWrite(motorLeftIn2, HIGH); // 一个电机向后
-    digitalWrite(motorRightIn1, HIGH);
-    digitalWrite(motorRightIn2, LOW); // 另一个电机向前
-    break;
-  case 2: // 右转
-    digitalWrite(motorLeftIn1, HIGH);
-    digitalWrite(motorLeftIn2, LOW); // 一个电机向前
-    digitalWrite(motorRightIn1, LOW);
-    digitalWrite(motorRightIn2, HIGH); // 另一个电机向后
-    break;
-  case 3: // 前进
-    digitalWrite(motorLeftIn1, LOW);
-    digitalWrite(motorLeftIn2, HIGH); // 两个电机都向后
-    digitalWrite(motorRightIn1, LOW);
-    digitalWrite(motorRightIn2, HIGH);
-    break;
-  case 5: // 后退
-    digitalWrite(motorLeftIn1, HIGH);
-    digitalWrite(motorLeftIn2, LOW); // 两个电机都向前
-    digitalWrite(motorRightIn1, HIGH);
-    digitalWrite(motorRightIn2, LOW);
-    break;
+   case 1: // 左转
+      digitalWrite(motorLeftIn1, LOW);
+      digitalWrite(motorLeftIn2, LOW); // 左电机停止
+      digitalWrite(motorRightIn1, HIGH);
+      digitalWrite(motorRightIn2, LOW); // 右电机向前，实现左转
+      break;
+    case 2: // 右转
+      digitalWrite(motorLeftIn1, HIGH);
+      digitalWrite(motorLeftIn2, LOW); // 左电机向前
+      digitalWrite(motorRightIn1, LOW);
+      digitalWrite(motorRightIn2, LOW); // 右电机停止，实现右转
+      break;
+    case 3: // 前进
+      digitalWrite(motorLeftIn1, HIGH);
+      digitalWrite(motorLeftIn2, LOW); // 左电机向前
+      digitalWrite(motorRightIn1, HIGH);
+      digitalWrite(motorRightIn2, LOW); // 右电机向前
+      break;
+    case 5: // 后退
+      digitalWrite(motorLeftIn1, LOW);
+      digitalWrite(motorLeftIn2, HIGH); // 左电机向后
+      digitalWrite(motorRightIn1, LOW);
+      digitalWrite(motorRightIn2, HIGH); // 右电机向后
+      break;
   default:
     // 如果收到的action不是预期的，停止所有电机
     stopMotors();
