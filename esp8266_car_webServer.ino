@@ -255,16 +255,16 @@ void setMotorState(int action, bool continuous)
   switch (action)
   {
    case 1: // 左转
-      digitalWrite(motorLeftIn1, HIGH);
-      digitalWrite(motorLeftIn2, LOW); 
-      digitalWrite(motorRightIn1, LOW);
-      digitalWrite(motorRightIn2, LOW); 
+      digitalWrite(motorLeftIn1, LOW);
+      digitalWrite(motorLeftIn2, HIGH); // 左电机向后，或者设置为LOW停止也可以
+      digitalWrite(motorRightIn1, HIGH);
+      digitalWrite(motorRightIn2, LOW); // 右电机向前，实现左转
       break;
     case 2: // 右转
-      digitalWrite(motorLeftIn1, LOW);
-      digitalWrite(motorLeftIn2, LOW); 
-      digitalWrite(motorRightIn1, HIGH);
-      digitalWrite(motorRightIn2, LOW); 
+      digitalWrite(motorLeftIn1, HIGH);
+      digitalWrite(motorLeftIn2, LOW); // 左电机向前
+      digitalWrite(motorRightIn1, LOW);
+      digitalWrite(motorRightIn2, HIGH); // 右电机向后，或者设置为LOW停止也可以，实现右转
       break;
     case 3: // 前进
       digitalWrite(motorLeftIn1, LOW);
